@@ -1,0 +1,54 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    background: var(--kavia-dark);
+    padding: 12px;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+}
+
+.square {
+    background: var(--kavia-dark);
+    border: 2px solid var(--kavia-orange);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.square:hover {
+    background: rgba(232, 122, 65, 0.1);
+}
+
+.status {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.reset-button {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+}
+
+.reset-button:hover {
+    opacity: 0.9;
+}
